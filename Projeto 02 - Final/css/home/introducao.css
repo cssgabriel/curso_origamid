@@ -1,0 +1,42 @@
+.introducao-bg {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: inset 0 -12rem #ffffff;
+}
+
+.introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 4rem;
+}
+
+.introducao-conteudo {
+    align-self: end;
+    padding-bottom: 20rem;
+}
+
+.introducao img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.introducao h1 {
+    margin-bottom: 3.2rem;
+    font-size: 6.4rem;
+    line-height: 1.125;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.introducao h1 span{
+    color: #ffbb00;
+}
+
+.introducao p {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: #b2b2b2;
+    font-family: "Roboto";
+    font-weight: 400;
+}
