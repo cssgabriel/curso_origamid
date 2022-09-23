@@ -14,15 +14,33 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
     list-style: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .flex {
     display: flex;
 }
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+/* HEADER */
 
 .header-bg {
     background-color: #000000;
@@ -32,8 +50,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    max-width: 120rem;
-    margin: 0 auto;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -48,4 +64,71 @@ ul {
     display: inline-block;
     padding: 1.6rem 0;
     font-size: 1.8rem;
+    position: relative;
+}
+
+.header-menu a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 0;
+    margin-top: 4px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+}
+
+/* INTRODUCAO */
+
+.introducao-bg {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 4rem;
+}
+
+.introducao-conteudo {
+    align-self: end;
+    padding-bottom: 8rem;
+}
+
+.introducao h1 {
+    margin-bottom: 3.2rem;
+    font-size: 6.4rem;
+    line-height: 1.125;
+}
+
+.introducao h1 span{
+    color: #ffbb00;
+}
+
+.introducao p {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: #b2b2b2;
+}
+
+.introducao a {
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    color: #332200;
+    font-size: 1.8rem;
+    line-height: 1.33;
+    font-weight: 700;
+}
+
+.introducao a:hover {
+    background: linear-gradient(#ffb60d, #e59317);
 }
