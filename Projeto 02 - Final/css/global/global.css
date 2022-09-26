@@ -37,6 +37,8 @@ img[src$=".jpg"] {
 .container {
     max-width: 120rem;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .grid {

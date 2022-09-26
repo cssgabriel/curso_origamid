@@ -44,3 +44,15 @@
 .link:hover {
     color: var(--cor-0);
 }
+
+/* PAGINAS INTERNAS */
+
+.titulo-bg {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: var(--cor-11);
+}
+
+.titulo p {
+    margin-bottom: 4px;
+}
