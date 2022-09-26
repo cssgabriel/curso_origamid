@@ -1,0 +1,33 @@
+.parceiros {
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+}
+
+.parceiros h2 {
+    margin-bottom: 6rem;
+}
+
+.parceiros ul {
+    padding: 0 2rem;
+    max-width: 140rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.parceiros li {
+    display: flex;
+    padding: 3.2rem;
+    border-left: 2px solid var(--cor-2);
+}
+
+.parceiros img {
+    margin: auto;
+}
+
+.parceiros li:first-child, .parceiros li:nth-child(5) {
+    border-left: none;
+}
+
+.parceiros li:nth-child(n + 5) {
+    border-top: 2px solid var(--cor-2);
+}
