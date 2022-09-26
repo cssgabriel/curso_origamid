@@ -1,0 +1,70 @@
+.bicicletas-bg {
+    background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.bicicletas {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    gap: 4rem;
+}
+
+.bicicletas-imagem {
+    position: relative;
+}
+
+.bicicletas-imagem span {
+    background-color: var(--cor-12);
+    padding: 8px 16px 8px 8px;
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.bicicletas-conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
+}
+
+.bicicletas h2, .bicicletas p {
+    grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+    margin-bottom: 2rem;
+}
+
+.bicicletas h2::before {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: .8rem;
+    background-color: var(--cor-p1);
+    margin-bottom: .8rem;
+}
+
+.bicicletas p {
+    margin-bottom: 3.2rem;
+}
+
+.bicicletas a {
+    place-self: end;
+}
+
+.bicicletas ul {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.bicicletas li {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.bicicletas-conteudo img {
+    width: 2.4rem;
+}

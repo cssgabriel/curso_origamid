@@ -26,6 +26,31 @@
     background: linear-gradient(#ffb60d, #e59317);
 }
 
+.botao.btn--3 {
+    display: flex;
+    align-items: center;
+}
+
+.botao.btn--3::after {
+    content: "";
+    display: inline-block;
+    width: 1.8rem;
+    height: 1rem;
+    margin-left: 1.2rem;
+    background: url("../../img/icones/seta.svg");
+    transition: .2s;
+}
+
+.botao.btn--3:hover::after {
+    content: "";
+    display: inline-block;
+    width: 1.8rem;
+    height: 1rem;
+    margin-left: 1.2rem;
+    background: url("../../img/icones/seta.svg");
+    transform: translateX(4px);
+}
+
 .link {
     display: inline-block;
     color: var(--cor-p1);
