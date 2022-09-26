@@ -3,11 +3,12 @@
 @import "./utilidades/cores.css";
 @import "./utilidades/tipografia.css";
 
-/* HEADER */
+/* HOME */
 @import "./utilidades/componentes.css";
 
-/* INTRODUCAO */
+/* hOME */
 @import "./home/introducao.css";
+@import "./home/tecnologia.css";
 
 /* INTRODUCAO */
 @import "./bicicletas/bicicletas-lista.css";

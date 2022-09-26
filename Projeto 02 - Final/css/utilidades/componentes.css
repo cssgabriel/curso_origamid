@@ -15,3 +15,22 @@
 .botao:hover {
     background: linear-gradient(#ffb60d, #e59317);
 }
+
+.link {
+    display: inline-block;
+    color: var(--cor-p1);
+    text-transform: uppercase;
+    font: 500 2.4rem/1.5 "Poppins", sans-serif;
+}
+
+.link::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    display: block;
+    background-color: currentColor;
+}
+
+.link:hover {
+    color: var(--cor-0);
+}
