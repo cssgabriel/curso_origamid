@@ -10,7 +10,11 @@
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
 /* BICICLETAS */
 @import "./bicicletas/bicicletas-lista.css";
+
+/* SEGUROS */
+@import "./seguros/seguros.css";
 
