@@ -22,6 +22,7 @@
     background-color: var(--cor-12);
     padding: 3.2rem 3.2rem 3.2rem 6rem;
     grid-template-columns: 1fr auto;
+    border-radius: 4px;
 }
 
 .seguros-item h3 {
