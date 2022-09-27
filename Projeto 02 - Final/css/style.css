@@ -29,8 +29,8 @@
 
 /* TERMOS */
 @import "./termos/termos.css";
-@import "./termos/lojas.css";
 
 /* CONTATO */
 @import "./contato/contato.css";
+@import "./contato/lojas.css";
 
