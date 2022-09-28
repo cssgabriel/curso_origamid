@@ -1,10 +1,9 @@
-console.log("Hello, World!");
+const div = document.querySelector(".div");
 
-const aluno = {
-    nome: "Gabriel",
-    idade: 24,
-    sexo: "M",
-    altura: 1.76,
-}
+// function sticky(event) {
+//     div.style = `top: ${event};left: ${}`;
+// }
 
-console.log(`Nome: ${aluno.nome}`);
+// window.addEventListener("mousemove", sticky);
+
+console.log(window.Event)
