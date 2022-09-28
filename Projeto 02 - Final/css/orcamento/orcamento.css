@@ -32,9 +32,62 @@
 .orcamento-produto {
     border-radius: 5px 0 0 5px;
     background: var(--cor-12);
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 2rem;
 }
 
 .orcamento-dados {
     border-radius: 0 5px 5px 0;
     background: var(--cor-0);
+}
+
+.orcamento-produto label {
+    font: 600 1.6rem/1.5 "Poppins", sans-serif;
+    color: var(--cor-4);
+    background-color: var(--cor-10);
+    padding: 1.2rem 1.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.orcamento-produto label::before {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid var(--cor-6);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label::before {
+    border-color: var(--cor-7);
+    box-shadow: inset 0 0 0 .4rem var(--cor-0), inset 0 0 0 .6rem var(--cor-7);
+}
+
+.orcamento-produto input:checked + label {
+    background-color: var(--cor-0);
+}
+
+.orcamento-produto > * {
+    grid-column: 1/-1;
+}
+
+.orcamento-produto input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.orcamento-produto > label {
+    grid-column: initial;
+}
+
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro {
+    display: block;
 }
