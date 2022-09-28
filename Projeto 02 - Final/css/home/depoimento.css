@@ -13,6 +13,7 @@
 .depoimento-conteudo {
     padding: 4rem 4rem 8rem 8rem;
     align-self: end;
+    background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 4rem right 4rem;
 }
 
 .depoimento-conteudo p {
