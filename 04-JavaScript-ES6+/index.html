@@ -15,11 +15,12 @@
         }
 
         .item {
-            padding: 30px;
-            background-color: #f7f7f7;
+            margin: 30px auto;
         }
-
+        
         .question {
+            padding: 30px;
+            background-color: #b7b7b7;
             display: grid;
             grid-template-columns: auto 1fr auto;
         }
@@ -30,6 +31,12 @@
 
         .answer {
             display: none;
+        }
+
+        .open .answer {
+            display: block;
+            background-color: #f7f7f7;
+            padding: 50px;
         }
     </style>
 </head>
