@@ -6,12 +6,49 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Teste Accordion">
     <title>Teste Accordion</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .item {
+            padding: 30px;
+            background-color: #f7f7f7;
+        }
+
+        .question {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+        }
+
+        .question svg {
+            width: 20px;
+        }
+
+        .answer {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <div class="item">
-        
+        <div class="question">
+            <span>01</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>  
+        </div>
+        <div class="answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non repellat, mollitia ducimus, corporis modi eius unde illo dolores dolore numquam, repellendus minus aspernatur magni? Cumque iusto necessitatibus quo magnam.</p>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
     
 </html>
