@@ -1,7 +1,11 @@
-const item = document.querySelector(".item");
+const item = document.querySelectorAll(".item");
 
-function open() {
+function open(item) {
     item.classList.toggle("open");
 }
 
-item.addEventListener("click",open)
+function addEvent(item) {
+    item.addEventListener("click", open);
+}
+
+item.forEach(addEvent);
