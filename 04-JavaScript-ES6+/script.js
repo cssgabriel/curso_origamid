@@ -1,7 +1,9 @@
-var cidade = "Luís Antônio";
-var idade = 25;
-var numero = "240";
-var nome = "Gabriel", sobrenome = "Carlos", nomeCompleto = `${nome} ${sobrenome}`;
-var frase = "It's time"
-// frase = 'It\'s time'
-console.log(typeof nomeCompleto)
+var idadeGabriel = 24, idadeCarol = 23, idadeKodah = 1;
+var verificaIdade = idadeGabriel > idadeCarol;
+if (verificaIdade) {
+    console.log("é maior");
+} else if (idadeCarol === idadeGabriel) {
+    console.log("é igual");
+} else {
+    console.log("é menor")
+}
