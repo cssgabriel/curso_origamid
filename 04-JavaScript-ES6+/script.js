@@ -1,5 +1,18 @@
-const item = document.querySelector(".item");
+function verificaTruthy(dado) {
+    if(!!dado) {
+        console.log("Trufhy");
+    }
+}
 
-item.addEventListener("click", function() {
-    console.log("Sou uma função anônima!")
+// perímetro
+
+function calculaPerimetro(lado) {
+    return lado * 4;
+}
+
+
+// add scroll
+
+addEventListener("scroll", function(){
+    console.log("Gabriel");
 });
