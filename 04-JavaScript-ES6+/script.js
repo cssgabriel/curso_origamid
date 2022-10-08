@@ -1,5 +1,4 @@
-var brasil = [1999,221,2,24,51,6]
+var possuiEmprego = true;
+var possuiCasa = true;
 
-for(let i = 0; i < brasil.length ;i++) {
-    console.log(`O Brasil ganhou a copa em ${brasil[i]}`)
-};
+var darCredito = (possuiCasa && possuiEmprego) ? "Conceder crédito!" : "Crédito negado!";
