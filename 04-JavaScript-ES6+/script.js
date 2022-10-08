@@ -1,18 +1,11 @@
-function verificaTruthy(dado) {
-    if(!!dado) {
-        console.log("Trufhy");
-    }
+const pessoa = {
+    nome: "Gabriel",
+    sobrenome: "Silva",
+    idade: "24",
+    altura: "176",
+    peso: 75,
+    andar(){
+        console.log("estou andando!");
+    },
 }
 
-// perímetro
-
-function calculaPerimetro(lado) {
-    return lado * 4;
-}
-
-
-// add scroll
-
-addEventListener("scroll", function(){
-    console.log("Gabriel");
-});
