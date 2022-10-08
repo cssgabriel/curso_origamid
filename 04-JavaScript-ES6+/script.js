@@ -4,8 +4,13 @@ const pessoa = {
     idade: "24",
     altura: "176",
     peso: 75,
-    andar(){
-        console.log("estou andando!");
+    nomeCompleto(){
+        console.log(`${this.nome} ${this.sobrenome}`);
     },
 }
 
+pessoa.andar = function() {
+    console.log("Funcionou!");
+}
+
+pessoa.altura = 3000;
