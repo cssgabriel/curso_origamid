@@ -1,12 +1,5 @@
-const cachorro = {
-    raca: "Labrador",
-    cor: "preto",
-    idade: 2,
-    late() {
-        if(homem) {
-            console.log("AU AU AU");
-        } else {
-            console.log("...")
-        }
-    }
-}
+var brasil = [1999,221,2,24,51,6]
+
+for(let i = 0; i < brasil.length ;i++) {
+    console.log(`O Brasil ganhou a copa em ${brasil[i]}`)
+};
