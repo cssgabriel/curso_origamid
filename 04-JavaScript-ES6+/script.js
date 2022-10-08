@@ -1,9 +1,5 @@
-var idadeGabriel = 24, idadeCarol = 23, idadeKodah = 1;
-var verificaIdade = idadeGabriel > idadeCarol;
-if (verificaIdade) {
-    console.log("é maior");
-} else if (idadeCarol === idadeGabriel) {
-    console.log("é igual");
-} else {
-    console.log("é menor")
-}
+const item = document.querySelector(".item");
+
+item.addEventListener("click", function() {
+    console.log("Sou uma função anônima!")
+});
