@@ -5,3 +5,5 @@ nome.addEventListener("click", function() {
 });
 
 const firstSibling = nome.nextElementSibling;
+
+const firstParent = nome.parentElement;
