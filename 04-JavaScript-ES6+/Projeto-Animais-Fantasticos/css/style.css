@@ -94,3 +94,17 @@ body {
     line-height: 1.2;
     margin-bottom: 1rem;
 }
+
+.animais-lista {
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.animais-lista::-webkit-scrollbar {
+    width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb {
+    background: #e54;
+}
