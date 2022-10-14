@@ -1,24 +1,9 @@
-const imagens = document.querySelectorAll("img");
+const p = document.querySelectorAll("p");
 
-console.log(imagens)
+p.forEach((item, i) => console.log(item, i));
 
-const imgs = document.querySelectorAll("img[src^='img/imagem']");
+const pHTML = document.getElementsByTagName("p");
 
-console.log(imgs)
+const pNewHTML = Array.from(pHTML);
 
-const links = document.querySelectorAll("a[href^='#']");
-
-console.log(links);
-
-const firstH2 = document.querySelector(".animais-descricao h2");
-
-console.log(firstH2);
-
-const lastP = document.querySelectorAll("p");
-
-console.log(lastP[lastP.length - 1]);
-
-
-imagens.forEach((item, i) => {
-    console.log(item, i);
-});
+console.log(pNewHTML);
