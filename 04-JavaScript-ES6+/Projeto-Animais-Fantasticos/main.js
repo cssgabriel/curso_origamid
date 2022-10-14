@@ -1,3 +1,1 @@
-const p = document.querySelectorAll("p");
-
-p.forEach((item, i) => console.log(item.textContent));
+const gridSection = document.querySelector(".grid-section");
