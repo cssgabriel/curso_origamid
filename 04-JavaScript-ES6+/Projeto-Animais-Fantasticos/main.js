@@ -14,3 +14,8 @@ imgs.forEach((item) => {
     console.log(item.hasAttribute("alt"));
 });
 
+const links = document.querySelector(".menu a\:not([href^='#'])");
+
+links.setAttribute("href", "https://www.google.com")
+
+console.log(links)
