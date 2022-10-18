@@ -1,6 +1,25 @@
-const animais = document.querySelector(".animais-lista");
+// const firstImg = document.querySelector("img");
 
-console.log(animais.clientHeight);
+// console.log(firstImg.offsetTop);
+// console.log(firstImg.clientWidth);
 
-console.log(animais.getBoundingClientRect());
-console.log(animais.getBoundingClientRect());
+// const allImgs = document.querySelectorAll("img");
+
+// let sum = 0;
+
+// allImgs.forEach((item) => {sum += item.clientWidth});
+
+// console.log(sum);
+
+const links = document.querySelectorAll("a");
+
+links.forEach((link) => {
+    const linkWidth = link.offsetWidth;
+    const linkHeight = link.offsetHeight;
+
+    if(linkHeight >= 48 && linkWidth >= 48) {
+        console.log("Passou no teste");
+    } else {
+        console.log("Deu ruim", link)
+    }
+});
