@@ -1,32 +1,9 @@
-// const firstImg = document.querySelector("img");
+const linksInternos = document.querySelectorAll("a[href^='#']");
 
-// console.log(firstImg.offsetTop);
-// console.log(firstImg.clientWidth);
-
-// const allImgs = document.querySelectorAll("img");
-
-// let sum = 0;
-
-// allImgs.forEach((item) => {sum += item.clientWidth});
-
-// console.log(sum);
-
-// const links = document.querySelectorAll("a");
-
-// links.forEach((link) => {
-//     const linkWidth = link.offsetWidth;
-//     const linkHeight = link.offsetHeight;
-
-//     if(linkHeight >= 48 && linkWidth >= 48) {
-//         console.log("Passou no teste");
-//     } else {
-//         console.log("Deu ruim", link)
-//     }
-// });
-
-const larguraTela = matchMedia("(max-width: 720px)").matches;
-
-if(larguraTela) {
-    const menu = document.querySelector(".menu");
-    menu.classList.add("menu-mobile");
+function clicou(event) {
+    console.log(event.currentTarget);
 }
+
+linksInternos.forEach((link) => {
+    link.addEventListener("click", clicou);
+});
