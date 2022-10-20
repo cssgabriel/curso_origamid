@@ -37,33 +37,29 @@ transacoes.forEach((item) => {
 
 console.log(sumTax, sumRec)
 
+// Retorne uma array com a lista abaixo
+const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
+
+const arr = transportes.split(";");
+console.log(arr);
 
 
+// Substitua todos os span's por a's
+let html = `
+<ul>
+    <li><span>Sobre</span></li>
+    <li><span>Produtos</span></li>
+    <li><span>Contato</span></li>
+</ul>`;
 
+html = html.split("span").join("a");
+console.log(html);
 
+// Retorne o último caracter da frase
+const frase = 'Melhor do ano!';
 
-
-
-
-
-
-
-  
-  // Retorne uma array com a lista abaixo
-  const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
-  
-  // Substitua todos os span's por a's
-  const html = `<ul>
-                  <li><span>Sobre</span></li>
-                  <li><span>Produtos</span></li>
-                  <li><span>Contato</span></li>
-                </ul>`;
-  
-  // Retorne o último caracter da frase
-  const frase = 'Melhor do ano!';
-  
-  // Retorne o total de taxas
-  const transacoes2 = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário', 'TARIFA especial'];
+// Retorne o total de taxas
+const transacoes2 = ['Taxa do Banco', '   TAXA DO PÃO', '  taxa do mercado', 'depósito Bancário', 'TARIFA especial'];
   
   
   
