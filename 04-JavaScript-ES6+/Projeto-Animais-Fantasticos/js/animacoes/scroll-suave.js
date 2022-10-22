@@ -1,4 +1,4 @@
-function initSoftScroll() {
+export default function initSoftScroll() {
 
     const linksInternos = document.querySelectorAll("[data-menu='suave'] a[href^='#']");
     if(linksInternos){
@@ -17,5 +17,3 @@ function initSoftScroll() {
         });
     }
 }
-
-initSoftScroll();
