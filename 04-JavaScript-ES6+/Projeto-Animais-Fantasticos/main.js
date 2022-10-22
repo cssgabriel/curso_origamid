@@ -85,6 +85,8 @@ function initAnimationScroll() {
             });
         }
     }
+
+    animaScroll();
 }
 
 initAnimationScroll();
