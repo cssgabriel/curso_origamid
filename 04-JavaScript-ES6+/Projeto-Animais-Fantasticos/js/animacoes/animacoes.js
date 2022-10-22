@@ -47,28 +47,6 @@ function initAccordion() {
 
 initAccordion();
 
-function initSoftScroll() {
-
-    const linksInternos = document.querySelectorAll("[data-menu='suave'] a[href^='#']");
-    if(linksInternos){
-        function scrollToSection(event) {
-            event.preventDefault();
-            const href = event.currentTarget.getAttribute("href");
-            const section = document.querySelector(href);
-            section.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        }
-
-        linksInternos.forEach((link) => {
-            link.addEventListener("click", scrollToSection);
-        });
-    }
-}
-
-initSoftScroll();
-
 function initAnimationScroll() {
     const sections = document.querySelectorAll("[data-anime='scroll']");
 
