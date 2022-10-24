@@ -14,13 +14,14 @@ function onMouseOver(event) {
     tooltipBox.style.left = event.pageX + "px";
 
     onMouseLeave.tooltipBox = tooltipBox;
+    onMouseLeave.element = this;
     this.addEventListener("mouseleave", onMouseLeave);
 }
 
 const onMouseLeave = {
-    tooltipBox: "",
     handleEvent() {
         this.tooltipBox.remove();
+        this.element.removeEventListener("mouseleave", onMouseLeave);
     }
 }
 
