@@ -9,7 +9,19 @@ tooltips.forEach((item) => {
 });
 
 function onMouseOver(event) {
-    criarTooltipBox(this);
+    const tooltipBox = criarTooltipBox(this);
+    tooltipBox.style.top = event.pageY + "px";
+    tooltipBox.style.left = event.pageX + "px";
+
+    onMouseLeave.tooltipBox = tooltipBox;
+    this.addEventListener("mouseleave", onMouseLeave);
+}
+
+const onMouseLeave = {
+    tooltipBox: "",
+    handleEvent() {
+        this.tooltipBox.remove();
+    }
 }
 
 function criarTooltipBox(element) {
@@ -17,4 +29,6 @@ function criarTooltipBox(element) {
     const text = element.getAttribute("aria-label");
     tooltipBox.classList.add("tooltip");
     tooltipBox.innerText = text;
+    document.body.appendChild(tooltipBox);
+    return tooltipBox;
 }
