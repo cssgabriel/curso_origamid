@@ -10,8 +10,9 @@ numeros.forEach((numero) => {
     let start = 0;
     const timer = setInterval(() => {
         start = start + incremento;
-        numero.innerText = total;
+        numero.innerText = start;
         if(start > total) {
+            numero.innerText = total;
             clearInterval(timer);
         }
     }, 25 * Math.random());
