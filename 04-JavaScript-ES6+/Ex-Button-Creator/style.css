@@ -31,10 +31,13 @@ input {
 
 .css {
     font-family: "IBM Plex Mono", monospace;
-    color: #333;
+    background-color: #333;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .css span {
