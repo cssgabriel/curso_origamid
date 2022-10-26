@@ -19,7 +19,7 @@ export default function initAnimaNumeros() {
     }
     
     function handleMutation(mutation) {
-        if(mutation[0].target.classList.contais("ativo")) {
+        if(mutation[0].target.classList.contains("ativo")) {
             observer.disconnect();
             animaNumeros();
         }
