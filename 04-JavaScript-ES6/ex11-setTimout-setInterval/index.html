@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimout e setInterval</title>
+
+    <style>
+        /* .blue {
+            background: blue;
+        }
+        body {
+            background: red;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cronometro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            font-family: monospace;
+        }
+        .display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            width: 150px;
+            height: 150px;
+            background: #121212;
+            color: white;
+            border-radius: 50%;
+            font-family: monospace;
+        }
+
+        button {
+            background-color: lightcoral;
+            font-weight: bold;
+            border: none;
+            font-family: monospace;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 1), 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cronometro">
+        <button class="btnIniciar">Iniciar</button>
+        <div class="display"></div>
+        <button class="btnPausar">Pausar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+  
