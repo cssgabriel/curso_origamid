@@ -29,7 +29,7 @@ const pegaValor = setInterval(() => {
   .then((json) => {
     console.log(`Valor atualizado do Bitcoin: R$ ${json.BRL.buy}`);
   })
-},10000000);
+}, 30000);
 
 
 // Utilizando a API https://api.chucknorris.io/jokes/random
