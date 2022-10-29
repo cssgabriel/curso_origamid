@@ -35,3 +35,18 @@ const pegaValor = setInterval(() => {
 // Utilizando a API https://api.chucknorris.io/jokes/random
 // retorne uma piada randomica do chucknorris, toda vez que
 // clicar em próxima
+
+const btnPiada = document.querySelector(".piada");
+
+btnPiada.addEventListener("click", next);
+const div = document.createElement("div");
+
+function next() {
+  div.innerText = "";
+  fetch("https://api.chucknorris.io/jokes/random")
+  .then((res) => res.json())
+  .then((json) => {
+    div.innerText = json.value;
+    document.body.appendChild(div);
+  });
+}
