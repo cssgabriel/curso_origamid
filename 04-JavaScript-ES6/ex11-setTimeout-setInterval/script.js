@@ -20,6 +20,7 @@ btnIniciar.addEventListener("click", iniciar);
 function iniciar() {
   if(!btnIniciar.classList.contains("ativo")){
     btnIniciar.classList.add("ativo");
+    
     const iniciarContagem = setInterval(() => {
       display.innerText = +display.innerText + 1;
     }, 1000);
