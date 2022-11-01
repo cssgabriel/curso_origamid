@@ -28,5 +28,7 @@ const redButton = createButton();
 
 // Utilize o método push para inserir as frutas ao final de comidas.
 const frutas = ['Banana', 'Uva', 'Morango'];
-const comidas = ['Pizza', 'Batata', ...frutas];
+// const comidas = ['Pizza', 'Batata', ...frutas]; Uma forma de ser feito
+const comidas = ['Pizza', 'Batata'];
 
+comidas.push(...frutas);
