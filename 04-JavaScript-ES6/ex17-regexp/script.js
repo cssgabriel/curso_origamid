@@ -16,13 +16,21 @@ const cpfCompleto = (cpfs) => {
   return cpfs.map(limparCpf).map(formatarCpf);
 }
 
+const substituiCpfs = (cpfElements) => {
+  const cpfs = listaCpfs(cpfElements);
+  const cpfsFormatados = cpfCompleto(cpfs);
 
+  cpfElements.forEach((el,i) => {
+    el.innerText = cpfsFormatados[i];
+  });
+}
+
+substituiCpfs(listaLi)
 
 // listaLi.forEach((li) => {
 //   const regexp = /(?:\d{3}[.-\s]?){3}[-.\s]?\d{2}/g
 //   console.log(li.innerText.replace(regexp, "Deu Certo"));
 // });
-
 
 
 /* 
