@@ -25,6 +25,26 @@
         input::placeholder {
             color: rgba(0, 0, 0, 0.2);
         }
+
+        input.erro {
+            border-color: red;
+        }
+        
+        input.valido {
+            border-color: greenyellow;
+        }
+        
+        .erro-text {
+            display: none;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 1em;
+            color: red;
+        }
+
+        .erro-text.ativar {
+            display: block;
+        }
         
     </style>
     
@@ -41,6 +61,6 @@
 
     </form>
     
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
