@@ -1,0 +1,50 @@
+.sobre {
+    padding: 6rem 0;
+}
+
+.sobre-container::after,
+.sobre-container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    margin-bottom: 6rem;
+}
+
+.sobre-item {
+    width: 46rem;
+    float: left;
+    margin: 0 10px;
+}
+
+.sobre-item img {
+    display: block;
+    max-width: 100%;
+}
+
+.sobre-item figcaption {
+    font-size: 3.6rem;
+    line-height: 1em;
+    background-color: var(--p-1);
+    width: 22rem;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    position: relative;
+    top: -2.5rem;
+}
+
+.sobre > p {
+    font-size: 1.8rem;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 46rem;
+}

@@ -1,0 +1,17 @@
+.locais-item h2 {
+    font-size: 3.6rem;
+}
+
+.locais-item p {
+    font-size: 1.8rem;
+    line-height: 1.4em;
+    max-width: 32rem;
+}
+
+.locais-item a {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid;
+    color: var(--p-1);
+}

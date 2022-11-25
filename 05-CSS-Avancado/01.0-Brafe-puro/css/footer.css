@@ -1,0 +1,24 @@
+.footer {
+    background: #d6d3c8;
+    padding: 4rem 0;
+}
+
+.footer-container::after,
+.footer-container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer p {
+    float: left;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    line-height: 1.4em;
+}
+
+.footer img {
+    float: right;
+    margin: 0 1rem;
+    display: block;
+}

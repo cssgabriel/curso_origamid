@@ -1,0 +1,70 @@
+@media (min-width: 700px) and (max-width: 980px) {
+    .container {
+        max-width: 72rem;
+    }
+
+    .sobre-item,
+    .locais-item,
+    .locais-item img,
+    .locais-item > div,
+    .assine-info,
+    .assine form,
+    .assine input {
+        width: 34rem;
+    }
+
+    .produtos-item {
+        width: 22rem;
+    }
+
+    
+}
+
+@media (max-width: 699px) {
+    .container {
+        max-width: 30rem;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .intro {
+        padding: 6rem 0;
+    }
+
+    .sobre-item,
+    .locais-item img,
+    .locais-item > div,
+    .assine-info,
+    .assine form,
+    .assine input {
+        width: 30rem;
+        margin: 0;
+    }
+
+    .produtos-item {
+        margin: 0 auto 2rem auto;
+    }
+
+    .footer p {
+        float: none;
+        margin: 0;
+    }
+
+    .footer img {
+        float: none;
+        margin: 1rem 0;
+    }
+
+}

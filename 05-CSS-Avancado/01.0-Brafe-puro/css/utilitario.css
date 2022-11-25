@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --p-1: #252525;
+    --p-2: #e7e4d8;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: #252525;
+}
+
+.container {
+    max-width: 96rem;
+    margin: 0 auto;
+}

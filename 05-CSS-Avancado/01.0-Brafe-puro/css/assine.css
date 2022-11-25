@@ -1,0 +1,59 @@
+.assine {
+    background-color: var(--p-2);
+    padding: 3rem 0;
+}
+
+.assine-container::after,
+.assine-container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.assine-info {
+    width: 46rem;
+    margin: 0 1rem;
+    float: left;
+}
+
+.assine-info h2 {
+    font-size: 3.6rem;
+}
+
+.assine-info p {
+    font-size: 2.4rem;
+    font-style: italic;
+}
+
+.assine form {
+    width: 46rem;
+    margin: 1rem 1rem 0 1rem;
+    float: left;
+}
+
+.assine form label {
+    display: none;
+}
+
+.assine input {
+    width: 32rem;
+    border: 3px solid var(--p-1);
+    background: none;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Georgia, serif;
+    padding: 1rem;
+    float: left;
+}
+
+.assine button {
+    background: var(--p-1);
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: 14rem;
+    padding: 1.3rem 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+@media (max-width: 699px) {
+    .container {
+        max-width: 30rem;
+    }
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5,
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+
+    .menu-nav ul {
+        float: none;
+    }
+
+    .menu-nav ul li a {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 8px;
+    }
+
+    .intro {
+        padding: 6rem 0;
+    }
+
+    .footer img {
+        float: none;
+        margin-top: 2rem;
+    }
+}

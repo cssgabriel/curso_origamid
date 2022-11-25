@@ -1,0 +1,10 @@
+.menu {
+    background-color: var(--p-1);
+}
+
+.menu-nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
