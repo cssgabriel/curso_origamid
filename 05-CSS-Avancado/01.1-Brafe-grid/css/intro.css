@@ -1,0 +1,28 @@
+.intro {
+    background: url("../img/bg-intro.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 15rem 0;
+    text-align: center;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 4.8rem;
+}
+
+.intro h1::after {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: .4rem;
+    margin: 0.1rem auto;
+    background: white;
+    margin: 1rem auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.8rem;
+}

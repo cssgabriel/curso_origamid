@@ -1,0 +1,59 @@
+.produtos {
+    background-color: var(--p-2);
+    border-top: 3px solid #d6d3c8;
+    border-bottom: 3px solid #d6d3c8;
+    padding: 6rem 0;
+}
+
+.produtos-item {
+    margin-bottom: 4rem;
+}
+
+.produtos-item h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+
+.produtos-item h2::before {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    background-color: currentColor;
+    border-radius: 50%;
+    border: 5px solid var(--p-2);
+    box-shadow: 0 0 0 5px currentColor;
+    margin: 2rem auto;
+}
+
+h2.produtos-paulista::before {
+    color: #492901;
+}
+
+h2.produtos-carioca::before {
+    color: #c17139;
+}
+
+h2.produtos-mineiro::before {
+    color: #d7a54d;
+}
+
+.produtos-item p {
+    font-size: 1.4rem;
+    line-height: 1.4em;
+}
+
+.produtos-btn {
+    width: 18rem;
+    color: var(--p-1);
+    border: 3px solid;
+    text-decoration: none;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+}
