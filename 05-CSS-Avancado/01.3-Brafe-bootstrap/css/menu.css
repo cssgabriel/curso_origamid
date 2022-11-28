@@ -8,3 +8,19 @@
     color: white;
     font-size: 1.8rem;
 }
+
+.menu-nav ul {
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.menu-nav ul li {
+    display: inline-flex;
+}
+
+.menu-nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    margin-left: 1rem;
+}

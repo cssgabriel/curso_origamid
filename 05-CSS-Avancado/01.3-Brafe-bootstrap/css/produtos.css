@@ -2,11 +2,19 @@
     background-color: var(--p-2);
     border-top: 3px solid #d6d3c8;
     border-bottom: 3px solid #d6d3c8;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.produtos-item {
+    margin-bottom: 4rem;
 }
 
 .produtos-item h2 {
-    text-align: center;
     font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 .produtos-item h2::before {
@@ -18,6 +26,7 @@
     border-radius: 50%;
     border: 5px solid var(--p-2);
     box-shadow: 0 0 0 5px currentColor;
+    margin: 2rem auto;
 }
 
 h2.produtos-paulista::before {
@@ -47,4 +56,13 @@ h2.produtos-mineiro::before {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    width: 18rem;
+    margin: 2rem auto 0 auto;
+    padding: 1.5rem;
+}
+
+.produtos-btn:hover {
+    text-decoration: none;
+    color: #c17139;
+    border-color: #c17139;
 }

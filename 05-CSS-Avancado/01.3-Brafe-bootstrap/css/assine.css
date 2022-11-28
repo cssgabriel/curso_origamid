@@ -1,14 +1,24 @@
 .assine {
     background-color: var(--p-2);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .assine-info h2 {
     font-size: 3.6rem;
+    font-weight: 700;
 }
 
 .assine-info p {
     font-size: 2.4rem;
     font-style: italic;
+}
+
+.assine form {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: flex-start;
 }
 
 .assine form label {
@@ -21,6 +31,8 @@
     font-size: 1.5em;
     font-style: italic;
     font-family: Georgia, serif;
+    align-self: flex-start;
+    padding: 1rem;
 }
 
 .assine button {
@@ -31,4 +43,6 @@
     color: white;
     border: none;
     cursor: pointer;
+    align-self: flex-start;
+    padding: 1.3rem;
 }

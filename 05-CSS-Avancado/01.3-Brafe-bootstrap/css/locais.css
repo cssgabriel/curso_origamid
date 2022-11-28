@@ -1,11 +1,23 @@
+.locais {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.locais-item {
+    margin-bottom: 4rem;
+}
+
 .locais-item h2 {
     font-size: 3.6rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 .locais-item p {
     font-size: 1.8rem;
     line-height: 1.4em;
     max-width: 32rem;
+    margin-bottom: 2rem;
 }
 
 .locais-item a {
@@ -14,4 +26,5 @@
     text-decoration: none;
     border: 3px solid;
     color: var(--p-1);
+    padding: 1rem 2rem;
 }

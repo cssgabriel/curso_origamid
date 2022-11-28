@@ -1,5 +1,7 @@
 .footer {
     background: #d6d3c8;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .footer p {
@@ -8,5 +10,5 @@
 }
 
 .footer img {
-    display: block;
+    float: right;
 }
