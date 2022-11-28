@@ -1,0 +1,45 @@
+@media (max-width: 698px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 30rem;
+    }
+
+    .menu-nav {
+        margin: 0;
+    }
+
+    .menu-logo {
+        margin: 0;
+    }
+
+    .menu-nav ul li a {
+        padding-left: 0;
+    }
+
+    .intro {
+        padding: 6rem 0;
+    }
+
+    .assine-info {
+        margin: 0 0 4rem 0;
+    }
+
+    .assine-form {
+        margin: 0;
+    }
+
+    .footer-img, .footer p {
+        margin: 1rem 0;
+    }
+
+    .locais-img,
+    .locais-info,
+    .produtos-item,
+    .sobre-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

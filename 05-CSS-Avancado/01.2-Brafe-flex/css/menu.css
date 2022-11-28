@@ -10,9 +10,14 @@
     font-size: 1.8rem;
 }
 
+.menu-logo {
+    margin: 0 1rem;
+}
+
 .menu-nav {
     flex: 1;
     align-self: center;
+    margin: 0 1rem;
 }
 
 .menu-nav ul {
