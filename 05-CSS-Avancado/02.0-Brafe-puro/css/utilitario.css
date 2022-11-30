@@ -9,6 +9,10 @@
     --p-1: #252525;
     --p-2: #d6d3c8;
     --p-3: #e7e4d8;
+    --p-4: #c0beb4;
+    --b-1: #492901;
+    --b-2: #c17139;
+    --b-3: #d7a54d;
 }
 
 body {
@@ -33,4 +37,11 @@ img {
 .container {
     max-width: 96rem;
     margin: 0 auto;
+}
+
+.container::after,
+.container::before {
+    content: "";
+    display: table;
+    clear: both;
 }

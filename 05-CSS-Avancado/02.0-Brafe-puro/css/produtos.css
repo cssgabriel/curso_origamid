@@ -1,0 +1,39 @@
+.produtos {
+    width: 62rem;
+    margin: 0 1rem;
+    float: left;
+}
+
+.produtos h1 {
+    font-size: 4.8rem;
+    font-weight: 400;
+}
+
+.produtos li {
+    width: 30rem;
+    float: left;
+}
+
+.produtos li:nth-child(even) {
+    margin-left: 2rem;
+}
+
+.produtos li img {
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--p-1);
+    margin: 4rem 3px 0 3px;
+}
+
+.produtos li span {
+    background-color: var(--p-3);
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    position: relative;
+    top: -1.5rem;
+}
+
+.produtos li h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
