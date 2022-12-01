@@ -1,0 +1,35 @@
+.cssgabriel {
+    color: white;
+    font-family: monospace;
+    background-color: #202020;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.cssgabriel a {
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.cssgabriel .links {
+    display: flex;
+}
+
+.cssgabriel .links li {
+    width: 3rem;
+    list-style: none;
+}
+
+.cssgabriel .links img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.cssgabriel .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}

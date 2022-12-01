@@ -1,0 +1,27 @@
+.header-informacoes {
+    font-size: 1.4rem;
+    background-color: var(--p-2);
+}
+
+.header-logo img {
+}
+
+.header-menu {
+    border-top: 3px solid var(--p-2);
+    border-bottom: 3px solid var(--p-2);
+}
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu a {
+    display: block;
+    color: var(--p-1);
+    font-size: 1.8rem;
+}
+
+.header-menu li + li a::before {
+    content: "•";
+    padding-right: 1rem;
+}
