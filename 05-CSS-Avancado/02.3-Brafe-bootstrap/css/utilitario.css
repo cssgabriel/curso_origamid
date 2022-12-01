@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --p-1: #252525;
+    --p-2: #d6d3c8;
+    --p-3: #e7e4d8;
+    --p-4: #c0beb4;
+    --b-1: #492901;
+    --b-2: #c17139;
+    --b-3: #d7a54d;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: var(--p-1);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,67 @@
+.filtro {
+    background: var(--p-3);
+    border: 3px solid var(--p-2);
+    padding: 2rem;
+    align-self: flex-start;
+}
+
+.filtro h2 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    font-weight: 700;
+}
+
+.filtro ul {
+    border-top: 3px solid var(--p-4);
+    border-bottom: 3px solid var(--p-4);
+    padding: 1rem 0;
+}
+
+.filtro li {
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 2;
+}
+
+.filtro li::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    border: 3px solid var(--p-4);
+    float: right;
+    margin-top: 5px;
+}
+
+.sabor {
+    overflow: hidden;
+}
+
+.sabor span {
+    text-indent: -20rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    background: currentColor;
+}
+
+.sabor-3 {
+    color: var(--b-1);
+    box-shadow: 2rem 0 0 0 currentColor,
+                4rem 0 0 0 currentColor;
+}
+.sabor-4 {
+    color: var(--b-2);
+    box-shadow: 2rem 0 0 0 currentColor,
+                4rem 0 0 0 currentColor,
+                6rem 0 0 0 currentColor;
+}
+.sabor-5 {
+    color: var(--b-3);
+    box-shadow: 2rem 0 0 0 currentColor,
+                4rem 0 0 0 currentColor,
+                6rem 0 0 0 currentColor,
+                8rem 0 0 0 currentColor;
+}
