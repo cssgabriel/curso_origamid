@@ -1,15 +1,21 @@
 .filtro {
     background: var(--p-3);
     border: 3px solid var(--p-2);
+    width: 30rem;
+    margin: 0 1rem;
+    padding: 2rem;
+    float: left;
 }
 
 .filtro h2 {
     font-size: 1.8rem;
+    padding: 1rem 0;
 }
 
 .filtro ul {
     border-top: 3px solid var(--p-4);
     border-bottom: 3px solid var(--p-4);
+    padding: 1rem 0;
 }
 
 .filtro li {
@@ -24,6 +30,8 @@
     height: 2rem;
     display: block;
     border: 3px solid var(--p-4);
+    float: right;
+    margin-top: 5px;
 }
 
 .sabor {

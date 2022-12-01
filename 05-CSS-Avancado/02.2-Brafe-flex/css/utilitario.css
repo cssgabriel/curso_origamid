@@ -34,14 +34,39 @@ img {
     height: auto;
 }
 
-.container {
+.flex {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 96rem;
     margin: 0 auto;
 }
 
-.container::after,
-.container::before {
-    content: "";
-    display: table;
-    clear: both;
+.flex-row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-4,
+.flex-item-6,
+.flex-item-8 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-self: flex-start;
+}
+
+.flex-item-4 {
+    flex: 0 0 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+}
+
+.flex-item-6 {
+    flex: 0 0 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+}
+
+.flex-item-8 {
+    flex: 0 0 calc(66.666% - 2rem);
+    max-width: calc(66.666% - 2rem);
 }
