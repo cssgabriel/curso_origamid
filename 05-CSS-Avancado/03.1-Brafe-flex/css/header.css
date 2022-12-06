@@ -1,0 +1,14 @@
+.header {
+    background-color: var(--p-3);
+    padding: 2rem;
+}
+
+.header-menu li a {
+    color: var(--p-1);
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
+.header-menu li:first-child a {
+    padding-left: 0px;
+}
