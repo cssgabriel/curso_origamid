@@ -1,7 +1,35 @@
-@media (min-width: 740px) and (max-width: 932px) {
-    
-}
+@media (max-width: 767px) {
+    .header-menu ul {
+        margin-top: 1rem;
+    }
 
-@media (max-width: 739px) {
-    
+    .side-nav {
+        background: none;
+    }
+
+    .side-nav ul {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side-nav li {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .side-nav li a::before {
+        top: 0;
+        margin: 0;
+    }
+
+    .side-nav li a {
+        overflow: hidden;
+        width: 4.4rem;
+        height: 4.4rem;
+        padding: 1rem;
+        border: none;
+        background-color: var(--p-1);
+        border-radius: 4px;
+    }
 }

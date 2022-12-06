@@ -1,5 +1,4 @@
 .produtos {
-    width: calc(100% - 30rem);
     margin: 0 auto;
     max-width: 96rem;
     padding: 2rem;
@@ -17,7 +16,6 @@
     text-transform: uppercase;
     padding: 1.5rem 2rem;
     border-radius: 4px;
-    float: right;
     text-align: center;
 }
 
@@ -26,10 +24,6 @@
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     margin-top: 2rem;
     position: relative;
-}
-
-.produtos-item img {
-    float: left;
 }
 
 .produtos-item a {

@@ -3,6 +3,11 @@
     padding: 2rem;
 }
 
+.header-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .header-menu li a {
     color: var(--p-1);
     font-size: 1.8rem;
