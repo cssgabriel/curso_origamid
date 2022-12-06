@@ -1,6 +1,16 @@
 .header {
     background-color: var(--p-3);
     padding: 2rem;
+    display: flex;
+}
+
+.header-logo {
+    flex-grow: 1;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-menu li a {
