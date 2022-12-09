@@ -1,16 +1,28 @@
 @import "_flex";
 
-$cinza: #444;
-$branco: #eee;
+@mixin title-large {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: monospace;
+    line-height: 1.15;
+    color: $cor-secundaria;
+}
+
+$cor-primaria: #eee;
+$cor-secundaria: #444;
+
+h1 {
+    @include title-large;
+}
 
 div {
-    background-color: $cinza;
+    background-color: $cor-secundaria;
     height: 30vh;
     max-width: 30vw;
     border-radius: 7px;
     margin: 60px auto 0;
     padding: 30px;
     p {
-        color: $branco;
+        color: $cor-primaria;
     }
 }
