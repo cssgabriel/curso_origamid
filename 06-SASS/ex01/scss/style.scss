@@ -1,0 +1,16 @@
+@import "_flex";
+
+$cinza: #444;
+$branco: #eee;
+
+div {
+    background-color: $cinza;
+    height: 30vh;
+    max-width: 30vw;
+    border-radius: 7px;
+    margin: 60px auto 0;
+    padding: 30px;
+    p {
+        color: $branco;
+    }
+}
