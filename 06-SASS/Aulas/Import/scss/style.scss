@@ -1,3 +1,18 @@
+/*
+Import Normal
+
+@import "reset";
+@import "buttons";
+
+Nesse caso o scss irá resultar em 2 arquivos css (reset.css e buttons.css).
+
+Partials (_reset.scss);
+
+@import "reset.scss";
+
+Irá importar somente o arquivo final, style.css por exemplo, e não vários arquivos.
+*/
+
 @import "flex";
 
 $cor-primaria: #eee;

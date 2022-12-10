@@ -1,19 +1,7 @@
 @import "flex";
 
-@mixin title-large {
-    font-size: 4rem;
-    font-weight: 700;
-    font-family: monospace;
-    line-height: 1.15;
-    color: $cor-secundaria;
-}
-
 $cor-primaria: #eee;
 $cor-secundaria: #444;
-
-h1 {
-    @include title-large;
-}
 
 div {
     background-color: $cor-secundaria;

@@ -2,14 +2,6 @@
   display: flex;
 }
 
-h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: monospace;
-  line-height: 1.15;
-  color: #444;
-}
-
 div {
   background-color: #444;
   height: 30vh;
