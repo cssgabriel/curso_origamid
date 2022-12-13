@@ -1,0 +1,16 @@
+/*
+Operadores
+
+Podemos somar e subtrair valores
+*/
+
+div {
+    $width: 800px;
+    $gutter: 40px;
+    width: $width + $gutter;
+}
+
+p {
+	font-size: 16px + 10;
+    background-color: #333 + #777;
+}
