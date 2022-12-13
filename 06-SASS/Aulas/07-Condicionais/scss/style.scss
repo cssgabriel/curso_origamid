@@ -1,0 +1,59 @@
+// Condicionais
+
+$tema: oceano;
+$primary-color: black;
+$secondary-color: gray;
+
+@if $tema == oceano {
+	$primary-color: blue;
+	$secondary-color: orange;
+} @else if $tema == deserto {
+	$primary-color: yellow;
+	$secondary-color: purple;
+}
+
+p {
+	color: $primary-color;
+	background: $secondary-color;
+}
+
+/* Outro exemplo */
+
+@mixin d($device) {
+	@if $device == m {
+		@media (max-width: 300px) {
+			@content;
+		}
+	}
+	@else if $device == t {
+		@media (max-width: 600px) {
+			@content;
+		}
+	}
+	@else if $device == s {
+		@media (max-width: 900px) {
+			@content;
+		}
+	}
+}
+
+div {
+    @include d(t) {
+        width: 80%;
+    }
+    @include d(m) {
+        width: 60%;
+    }
+}
+
+/*utilizando condicionais*/
+
+div {
+	$width: 600px;
+	width: $width;
+	@if $width > 400px {
+		height: $width * 1.5;
+	} @else {
+		height: $width;
+	}
+}

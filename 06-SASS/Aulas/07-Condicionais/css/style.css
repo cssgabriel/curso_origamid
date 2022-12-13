@@ -1,0 +1,23 @@
+p {
+  color: blue;
+  background: orange;
+}
+
+/* Outro exemplo */
+@media (max-width: 600px) {
+  div {
+    width: 80%;
+  }
+}
+
+@media (max-width: 300px) {
+  div {
+    width: 60%;
+  }
+}
+
+/*utilizando condicionais*/
+div {
+  width: 600px;
+  height: 900px;
+}

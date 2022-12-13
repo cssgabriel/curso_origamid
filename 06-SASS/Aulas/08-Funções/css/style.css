@@ -1,0 +1,30 @@
+a {
+  color: white;
+  background: #84E;
+}
+
+a:hover {
+  background: #c4a2f7;
+}
+
+a {
+  color: white;
+  background: #84E;
+}
+
+a:hover {
+  background: rgba(136, 68, 238, 0.5);
+}
+
+p {
+  width: 133px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/*Outro exemplo*/
+div {
+  width: 42%;
+}

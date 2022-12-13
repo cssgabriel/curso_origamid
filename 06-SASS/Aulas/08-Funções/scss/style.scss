@@ -1,0 +1,51 @@
+// Funções
+
+// Lighten e Darken
+
+$roxo: #84E;
+
+a {
+	color: white;
+	background: $roxo;
+	&:hover {
+		background: lighten($roxo, 20%);
+	}
+}
+
+// transparentize
+
+a {
+	color: white;
+	background: $roxo;
+	&:hover {
+		background: transparentize($roxo, .5);
+	}
+}
+
+// Existe a função round para arredondar
+
+$width: 400px;
+
+p {
+	width: round($width / 3);
+}
+
+// Você também pode criar suas próprias funções
+
+@function em($pixels, $contexto: 16) {
+	@return ($pixels / $contexto) * 1em;
+}
+
+p {
+	font-size: em(24);
+}
+
+/*Outro exemplo*/
+
+@function grid($colunas, $total: 12) {
+	@return round(($colunas / $total) * 100%);
+}
+
+div {
+	width: grid(5);
+}

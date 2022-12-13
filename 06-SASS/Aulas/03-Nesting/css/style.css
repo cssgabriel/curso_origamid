@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*
+Capacidade de colocar um seletor dentro do outro.
+*/
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+div {
+  background-color: #444;
+  height: 30vh;
+  max-width: 30vw;
+  border-radius: 7px;
+  margin: 60px auto 0;
+  padding: 30px;
+}
+
+div p {
+  color: #eee;
+  font-family: monospace;
+}
+
+/*
+Podemos utilizar o caractere & para fazer referência
+ao seletor anterior, e continuar aplicado regras css.
+*/
+ul.modal {
+  padding: 20px;
+}
+
+ul.modal li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul.modal li a {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+ul.modal li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/*
+Existe também o Nesting de propriedades, embora não seja recomendado o uso.
+*/
+p {
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: monospace;
+  font-style: italic;
+}

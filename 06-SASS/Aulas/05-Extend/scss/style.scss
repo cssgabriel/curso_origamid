@@ -1,0 +1,167 @@
+/*
+Extend
+
+.erro {
+	color: red;
+	font-weight: bold;
+}
+
+.button-erro {
+	@extend .erro;
+	padding: 20px;
+	border: 2px solid red;
+}
+
+Placeholder
+Ex:
+*/
+
+%clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@import "flex";
+
+$cor-primaria: #eee;
+$cor-secundaria: #444;
+$font-primaria: monospace;
+$gutter: 20px;
+
+@mixin title-large {
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+h1 {
+    @include title-large;
+}
+
+@mixin border-box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin title {
+    font-weight: 700;
+    font-family: monospace;
+}
+    
+@mixin text-large {
+    font-size: 4em;
+    line-height: 1;
+}
+    
+@mixin title-large {
+    @include title;
+    @include text-large;
+}
+
+div {
+    @include border-box;
+    background-color: $cor-secundaria;
+    max-width: 30vw;
+    border-radius: 7px;
+    margin: 60px auto 0;
+    padding: 30px;
+    @extend %clearfix;
+    p {
+        color: $cor-primaria;
+        font-family: $font-primaria;
+    }
+}
+
+/*
+Pode colocar mais de um argumento
+
+@mixin separador($color, $largura) {
+	&::after {
+		content: "";
+		display: block;
+		width: $largura;
+		height: 4px;
+		background: $color;
+	}
+}
+
+Pode colocar um valor padrão caso o usuário não passe nenhum parâmetro.
+
+@mixin separador($color: red, $largura: 100px) {
+	&::after {
+		content: "";
+		display: block;
+		width: $largura;
+		height: 4px;
+		background: $color;
+	}
+}
+*/
+
+@mixin separador($color: red, $largura: 100px) {
+	&::after {
+		content: "";
+		display: block;
+		width: $largura;
+		height: 4px;
+		background: $color;
+	}
+}
+
+div {
+    @include separador(red);
+}
+
+/*
+Argumentos que podem levar mais de um valor.
+
+@mixin box-shadow(args...) {
+    regras...
+}
+
+Podemos criar mixins para tamanhos de tela.
+
+*/
+
+@mixin mobile {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+ul.modal {
+    padding: 20px;
+    @include mobile {
+        padding: 10px;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        a {
+            padding: 20px;
+            @include mobile {
+                padding: 10px;
+            }
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            display: block;
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+p {
+    font: {
+        weight: 700;
+        size: 1.125rem;
+        family: $font-primaria;
+        style: italic;
+    }
+}
