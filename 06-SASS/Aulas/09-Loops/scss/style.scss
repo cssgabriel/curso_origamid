@@ -1,0 +1,43 @@
+// Loop
+
+// @for
+
+@for $i from 1 through 6 {
+	.item-#{$i} {
+		width: 100px * $i;
+	}
+}
+
+/* Exemplo prático de quando usar */
+
+$container: 1200px;
+$gutter: 20px;
+$colunas: 12;
+
+@for $i from 1 through $colunas {
+	$width: $container / $colunas * $i - $gutter;
+	.grid-#{$i} {
+		width: $width;
+	}
+}
+
+// @while
+
+$i: 1;
+
+@while $i <= 6 {
+	.type-#{$i} {
+		font-size: 16 * $i + px;
+	}
+	$i: $i + 1;
+}
+
+// @each
+
+$redes: facebook twitter pinterest instagram;
+
+@each $rede in $redes {
+	.#{$rede}-icon {
+		background-image: url("../img/#{$rede}.png");
+	}
+}
