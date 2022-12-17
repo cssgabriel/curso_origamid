@@ -40,10 +40,6 @@ $s-device: 480px;
 	@return $result;
 }
 
-div {
-	width: grid(6);
-}
-
 // Gera as classes de grid
 
 @for $i from 1 through $cols {
