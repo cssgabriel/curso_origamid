@@ -1,15 +1,14 @@
 "use strict";
-function mostraPessoa(obj) {
-    return `${obj.nome} ${obj.sobrenome}`;
+async function fetchProduct() {
+    const response = await fetch("https://api.origamid.dev/json/notebook.json");
+    const data = await response.json();
+    showProduct(data);
 }
-function idadeSal(obj) {
-    return obj.idade / obj.salario;
+fetchProduct();
+function showProduct(data) {
+    document.body.innerHTML = `
+    <div>
+      <h2>${data.nome}</h2>
+    </div>
+  `;
 }
-const person = {
-    nome: "Gabriel",
-    sobrenome: "Carlos",
-    idade: 25,
-    salario: 3000,
-};
-console.log(mostraPessoa(person));
-console.log(idadeSal(person));
