@@ -6,6 +6,7 @@
 
 const links = document.querySelectorAll(".link");
 links.forEach((link) => checkIntaceof(link));
+
 type Link = HTMLAnchorElement | HTMLButtonElement | Element;
 
 function checkIntaceof(link: Link) {
@@ -15,3 +16,10 @@ function checkIntaceof(link: Link) {
     link.style.cssText = "border: 2px solid blue; color: green";
   }
 }
+
+/* SOLUÇAO ANDRE RAFAEL
+
+function checkIntaceof(link: HTMLElement) {
+  link.style.cssText = "border: 2px solid black; color: red";
+}
+*/
