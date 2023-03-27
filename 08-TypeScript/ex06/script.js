@@ -14,3 +14,9 @@ function checkIntaceof(link) {
         link.style.cssText = "border: 2px solid blue; color: green";
     }
 }
+/* SOLUÇAO ANDRE RAFAEL
+
+function checkIntaceof(link: HTMLElement) {
+  link.style.cssText = "border: 2px solid black; color: red";
+}
+*/
