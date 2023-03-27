@@ -36,7 +36,8 @@ function handleClick(event: Event) {
 /**
  * SOLUÇÃO ANDRE RAFAEL
  * 
- * const btnMobile = document.getElementById('btn-mobile');
+
+const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event: PointerEvent) {
   const button = event.currentTarget;
