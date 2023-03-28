@@ -26,7 +26,7 @@ async function renderScreen() {
     console.log(total);
     document.body.innerHTML += `
     <div style="color: red; font-size: 1.8rem">
-      <h2>R$ ${total},00</h2>
+      <h2>Total: R$ ${total},00</h2>
     </div>
   `;
 }
