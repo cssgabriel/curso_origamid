@@ -10,6 +10,7 @@
 // 7 - Ao refresh da página, preencha os valores de localStorage (caso seja UserData) no formulário e em window.UserData
 
  */
+window.userData = getDataLocalStorage();
 const form = document.forms[0];
 const inputCPF = document.getElementById("cpf");
 const inputEmail = document.getElementById("email");
@@ -19,8 +20,6 @@ window.addEventListener("load", setDataLocalStorage);
 function updateUserData({ target }) {
     if (!(target instanceof HTMLInputElement))
         return;
-    if (!("userData" in window))
-        window.userData = {};
     const id = target?.id;
     window.userData[id] = target?.value;
     if (!checkTypeGuard(window.userData))
@@ -40,18 +39,28 @@ function getDataLocalStorage() {
         return;
     if (!(typeof localStorage.getItem("userData") === "string"))
         return;
-    const userData = JSON.parse(localStorage.getItem("userData"));
-    if (checkTypeGuard(userData))
-        return userData;
+    const userData = localStorage.getItem("userData");
+    if (!userData)
+        return;
+    const userDataJSON = JSON.parse(userData);
+    if (checkTypeGuard(userDataJSON))
+        return userDataJSON;
+}
+function checkInputElement(data) {
+    if (data && data instanceof HTMLInputElement)
+        return true;
+    else
+        return false;
 }
 function setDataLocalStorage() {
     const userData = getDataLocalStorage();
-    const formElements = form.childNodes;
     if (!(userData && checkTypeGuard(userData)))
         return;
-    formElements.forEach((item) => {
-        if (item.id in userData) {
-            item.value = userData[item.id];
+    Object.entries(userData).forEach(([key, value]) => {
+        const input = document.getElementById(key);
+        if (checkInputElement(input)) {
+            console.log(input, value);
+            input.value = value;
         }
     });
 }
