@@ -2,16 +2,15 @@ import { URL_API } from "./config.js";
 import GenerateTable from "./generateTable.js";
 import fetchData from "./fetchData.js";
 import normalizeTransation from "./normalizeTransation.js";
+import Statistics from "./Statistics.js";
 
 const state = {
-  payments: [],
+  transactions: [],
   table: {
     id: "transactions",
     headers: ["Nome", "Email", "Compra", "Pagamento", "Status"],
   },
 };
-
-// function checkTypeGuard<T>(data: unknown): data is Payments {}
 
 async function getData() {
   const dataPayments = await fetchData<TransactionAPI[]>(URL_API);
@@ -19,9 +18,8 @@ async function getData() {
   const transactions = dataPayments.map(normalizeTransation);
 
   const generateTable = new GenerateTable("body");
-  generateTable.generateEmpityTable("afterbegin", null, state.table.id);
+  generateTable.generateEmpityTable("beforeend", null, state.table.id);
   generateTable.generateHead("afterbegin", ...state.table.headers);
-
   if (
     checkTypeGuard<Transaction>(
       transactions,
@@ -36,19 +34,9 @@ async function getData() {
       generateTable.generateRow("beforeend", transaction);
     });
   }
-
-  // document.body.insertAdjacentHTML("afterbegin", markupHeader);
-  // const keys = Object.keys(dataPayments[0]);
-  // const keysLowerCase = keys.map((item) => {
-  //   let newWordCamelCase;
-  //   const words = item.split(" ");
-  //   newWordCamelCase = words[0].toLowerCase();
-  //   newWordCamelCase += words.
-  // });
-
-  // console.log(keysLowerCase);
-  // // console.log(jsonNormalize(dataPayments));
+  renderStatistics(transactions);
 }
+getData();
 
 function checkTypeGuard<T>(
   data: unknown[],
@@ -61,4 +49,12 @@ function checkTypeGuard<T>(
   }
 }
 
-getData();
+function renderStatistics(transactions: Transaction[]): void {
+  const statistics = new Statistics(transactions);
+  const totalElement = document.querySelector<HTMLElement>("#total span");
+  if (!totalElement) return;
+  totalElement.innerText = statistics.total.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+}
