@@ -7,8 +7,8 @@ export default function normalizeTransationAPI(transaction) {
         data: stringToDate(transaction.Data),
         status: transaction.Status,
         email: transaction.Email,
-        moeda: currencyToNumber(transaction["Valor (R$)"]),
-        valor: 0,
+        moeda: transaction["Valor (R$)"],
+        valor: currencyToNumber(transaction["Valor (R$)"]),
         pagamento: transaction["Forma de Pagamento"],
         novo: Boolean(transaction["Cliente Novo"]),
     };
