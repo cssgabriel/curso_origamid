@@ -34,8 +34,18 @@ function checkTypeGuard(data, ...keys) {
         return false;
     }
 }
+function renderList(list, containerId) {
+    const containerElement = document.getElementById(containerId);
+    if (!containerElement)
+        return;
+    Object.keys(list).forEach((key) => {
+        containerElement.innerHTML += `<p>${key}: ${list[key]}</p>`;
+    });
+}
 function renderStatistics(transactions) {
     const statistics = new Statistics(transactions);
+    renderList(statistics.payment, "pagamento");
+    renderList(statistics.status, "status");
     const totalElement = document.querySelector("#total span");
     if (!totalElement)
         return;
@@ -43,4 +53,8 @@ function renderStatistics(transactions) {
         style: "currency",
         currency: "BRL",
     });
+    const dayElement = document.querySelector("#dia span");
+    if (dayElement) {
+        dayElement.innerText = statistics.bestDay[0];
+    }
 }

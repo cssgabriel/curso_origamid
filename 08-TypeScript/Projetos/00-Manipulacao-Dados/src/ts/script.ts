@@ -3,6 +3,7 @@ import GenerateTable from "./generateTable.js";
 import fetchData from "./fetchData.js";
 import normalizeTransation from "./normalizeTransation.js";
 import Statistics from "./Statistics.js";
+import { CountList } from "./countBy.js";
 
 const state = {
   transactions: [],
@@ -49,12 +50,26 @@ function checkTypeGuard<T>(
   }
 }
 
+function renderList(list: CountList, containerId: string) {
+  const containerElement = document.getElementById(containerId);
+  if (!containerElement) return;
+  Object.keys(list).forEach((key) => {
+    containerElement.innerHTML += `<p>${key}: ${list[key]}</p>`;
+  });
+}
+
 function renderStatistics(transactions: Transaction[]): void {
   const statistics = new Statistics(transactions);
+  renderList(statistics.payment, "pagamento");
+  renderList(statistics.status, "status");
   const totalElement = document.querySelector<HTMLElement>("#total span");
   if (!totalElement) return;
   totalElement.innerText = statistics.total.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
+  const dayElement = document.querySelector<HTMLElement>("#dia span");
+  if (dayElement) {
+    dayElement.innerText = statistics.bestDay[0];
+  }
 }
