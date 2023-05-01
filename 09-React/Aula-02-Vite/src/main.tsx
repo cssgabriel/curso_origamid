@@ -1,13 +1,7 @@
 // import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./ex03/App-ex03";
+import App from "./ex04/App-ex04";
 
-if (window.location.pathname.includes("produtos")) {
-  ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <App path="produtos" />
-  );
-} else {
-  ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-    <App color="green" path="home" />
-  );
-}
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <App />
+);
