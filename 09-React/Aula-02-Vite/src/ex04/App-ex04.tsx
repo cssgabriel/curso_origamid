@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactEventHandler } from "react";
 import Produto from "./Produto";
 
 // Os links abaixo puxam dados de um produto em formato JSON
@@ -16,8 +16,11 @@ const App = () => {
 
   const URL_BASE = "https://ranekapi.origamid.dev/json/api/produto/";
 
-  const fetchProduto = async function (e: any) {
+  const fetchProduto = async function (
+    e: React.PointerEvent<HTMLButtonElement>
+  ) {
     setLoad(true);
+    console.log(e);
     const res = await fetch(`${URL_BASE}${e.target.innerText}`);
     const json = await res.json();
     setLoad(false);
