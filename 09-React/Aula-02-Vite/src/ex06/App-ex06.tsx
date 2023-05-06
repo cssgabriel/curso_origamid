@@ -1,5 +1,7 @@
 import React from "react";
-import { GlobalContext } from "./GlobalContext";
+import { GlobalStorage } from "./GlobalContext";
+import Produto from "./Produto";
+import { Limpar } from "./Limpar";
 
 // Utilize o GlobalContext do exemplo anterior para puxar os dados da API abaixo:
 // https://ranekapi.origamid.dev/json/api/produto/
@@ -9,12 +11,11 @@ import { GlobalContext } from "./GlobalContext";
 // e exponha essa função no contexto global
 
 const App = () => {
-  const global = React.useContext(GlobalContext);
-  console.log(global());
   return (
-    <>
-      <div>{"Cheguei"}</div>
-    </>
+    <GlobalStorage>
+      <Produto />
+      <Limpar />
+    </GlobalStorage>
   );
 };
 
