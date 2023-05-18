@@ -4,7 +4,7 @@ const Radio = ({ pergunta, options, onChange, value, id, active }: any) => {
   return (
     <fieldset style={{ marginBottom: "1rem", padding: "2rem" }}>
       <legend style={{ fontWeight: "bold" }}>{pergunta}</legend>
-      {options.map((opt) => (
+      {options.map((opt: string) => (
         <label key={opt}>
           <input
             type="radio"
