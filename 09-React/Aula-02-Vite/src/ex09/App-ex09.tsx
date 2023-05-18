@@ -56,7 +56,7 @@ const App = () => {
   const [indexQuestion, setIndexQuestion] = React.useState(0);
   const [end, setEnd] = React.useState(false);
 
-  function handleSubmit(e) {
+  function handleSubmit(e: any) {
     e.preventDefault();
     if (perguntas[indexQuestion + 1]) {
       setIndexQuestion(indexQuestion + 1);
