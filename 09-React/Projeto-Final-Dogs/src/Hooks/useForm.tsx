@@ -1,6 +1,6 @@
 import React, { FormEvent } from "react";
 
-type Type = "email" | "password";
+type Type = "email" | "password" | "number";
 const types = {
   email: {
     regex:
@@ -11,6 +11,10 @@ const types = {
     regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
     message:
       "A senha deve conter 1 caracter maiúsculo, 1 minúsculo e 1 dígito. Com no mínimo 8 caracteres.",
+  },
+  number: {
+    regex: /^\d+$/,
+    message: "Utilize apenas números.",
   },
 };
 

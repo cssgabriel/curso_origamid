@@ -6,7 +6,7 @@ export const UserContext = React.createContext<null | unknown>(null);
 
 export const UserStorage = ({ children }) => {
   const [data, setData] = React.useState(null);
-  const [login, setLogin] = React.useState(false);
+  const [login, setLogin] = React.useState<null | boolean>(null);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
   const navigate = useNavigate();
@@ -37,17 +37,13 @@ export const UserStorage = ({ children }) => {
     }
   }
 
-  const userLogout = React.useCallback(
-    async function () {
-      setData(null);
-      setError(null);
-      setLogin(false);
-      setLoading(false);
-      window.localStorage.removeItem("token");
-      navigate("/login");
-    },
-    [navigate]
-  );
+  const userLogout = React.useCallback(async function () {
+    setData(null);
+    setError(null);
+    setLogin(false);
+    setLoading(false);
+    window.localStorage.removeItem("token");
+  }, []);
 
   React.useEffect(() => {
     async function autoLogin() {
@@ -66,14 +62,16 @@ export const UserStorage = ({ children }) => {
         } finally {
           setLoading(false);
         }
+      } else {
+        setLogin(false);
       }
     }
     autoLogin();
-  }, [userLogout, navigate]);
+  }, [userLogout]);
 
   return (
     <UserContext.Provider
-      value={{ userLogin, data, userLogout, error, loading }}
+      value={{ userLogin, data, userLogout, error, loading, login }}
     >
       {children}
     </UserContext.Provider>
