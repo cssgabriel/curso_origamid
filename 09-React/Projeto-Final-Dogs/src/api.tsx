@@ -3,6 +3,7 @@ export const API_URL = "https://dogsapi.origamid.dev/json";
 interface Body {
   username: string;
   password: string;
+  [key: string]: unknown;
 }
 
 export function TOKEN_POST(body: Body) {
@@ -38,6 +39,19 @@ export function USER_GET(token: string) {
       headers: {
         Authorization: "Bearer " + token,
       },
+    },
+  };
+}
+
+export function USER_POST(body: Body) {
+  return {
+    url: API_URL + "/api/user",
+    options: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
     },
   };
 }

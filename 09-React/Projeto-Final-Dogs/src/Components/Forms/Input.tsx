@@ -4,10 +4,10 @@ interface PropsInput {
   label: string;
   type: string;
   name: string;
-  value: string;
-  onChange: React.ChangeEventHandler;
-  onBlur: React.ChangeEventHandler;
-  error: string;
+  value?: string;
+  onChange?: React.ChangeEventHandler;
+  onBlur?: React.ChangeEventHandler;
+  error?: string;
   [key: string]: unknown;
 }
 
