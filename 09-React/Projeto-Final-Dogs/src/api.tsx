@@ -86,3 +86,27 @@ export function PHOTOS_GET({
     },
   };
 }
+
+export function PHOTO_GET(id: number) {
+  return {
+    url: `${API_URL}/api/photo/${id}`,
+    options: {
+      method: "GET",
+      cache: "no-store",
+    },
+  };
+}
+
+export function COMMENT_POST(id: number, body: any) {
+  return {
+    url: `${API_URL}/api/photo/${id}`,
+    options: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + window.localStorage.getItem("token"),
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}

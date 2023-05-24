@@ -1,0 +1,19 @@
+.modal {
+  position: fixed;
+  /* width: 100dvw; */
+  /* height: 100vh; */
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  z-index: 20;
+  padding: 2rem 4rem;
+}
+
+@media (max-width: 40rem) {
+  .modal {
+    padding: 2rem;
+  }
+}
