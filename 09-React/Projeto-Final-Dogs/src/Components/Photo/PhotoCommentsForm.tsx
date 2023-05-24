@@ -1,8 +1,8 @@
 import React from "react";
 import { ReactComponent as Enviar } from "../../Assets/enviar.svg";
 import useFetch from "../../Hooks/useFetch";
-import { COMMENT_POST } from "../../api";
 import Error from "../Helper/Error";
+import { COMMENT_POST } from "../../api";
 import styles from "./PhotoCommentsForm.module.css";
 
 const PhotoCommentsForm = ({ id, setComments }) => {
@@ -13,7 +13,6 @@ const PhotoCommentsForm = ({ id, setComments }) => {
     e.preventDefault();
     const { url, options } = COMMENT_POST(id, { comment });
     const { res, json } = await request(url, options);
-    console.log(url, options);
     if (res.ok) {
       setComment("");
       setComments((comments) => [...comments, json]);
