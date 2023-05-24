@@ -2,7 +2,7 @@
 
 import { Route, Routes } from "react-router-dom";
 import UserHeader from "./UserHeader";
-import Feed from "../Feed";
+import Feed from "../Feed/Feed";
 import UserPhotoPost from "./UserPhotoPost";
 import UserStats from "./UserStats";
 
