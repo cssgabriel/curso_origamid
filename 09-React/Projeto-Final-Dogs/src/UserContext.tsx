@@ -2,6 +2,18 @@ import React from "react";
 import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from "./api";
 import { useNavigate } from "react-router-dom";
 
+// declare global {
+//   interface UserContext {
+//      userLogin: (a: number): string;
+//      data: string;
+//      userLogout: string;
+//      error: string;
+//      loading: string;
+//      login: string;
+//     }
+
+// }
+
 export const UserContext = React.createContext<null | unknown>(null);
 
 export const UserStorage = ({ children }) => {

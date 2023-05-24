@@ -4,16 +4,10 @@ import styles from "./Loading.module.css";
 const Loading = () => {
   const [step, setStep] = React.useState(0);
 
-  function displayStep(i) {
-    return {
-      display: step === i ? "block" : "none",
-    };
-  }
-
   React.useEffect(() => {
     function updateStep() {
       setStep((step) => {
-        if (step < 3) return step++;
+        if (step < 3) return step + 1;
         else return 0;
       });
     }
@@ -22,6 +16,12 @@ const Loading = () => {
       clearInterval(interval);
     };
   }, []);
+
+  function displayStep(i: number) {
+    return {
+      display: step === i ? "block" : "none",
+    };
+  }
 
   return (
     <div className={styles.wrapper}>

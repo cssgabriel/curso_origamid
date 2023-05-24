@@ -5,6 +5,7 @@ import styles from "./PhotoComments.module.css";
 
 interface Props {
   id: number;
+  single: boolean;
   comments: PhotoComments;
 }
 interface PhotoComments {
@@ -36,7 +37,10 @@ const PhotoComments = (props: Props) => {
 
   return (
     <>
-      <ul ref={commentsSection} className={styles.comments}>
+      <ul
+        ref={commentsSection}
+        className={`${styles.comments} ${props.single ? styles.single : ""}`}
+      >
         {comments.map((com) => (
           <li key={com.comment_ID}>
             <b>{com.comment_author}: </b>
@@ -44,7 +48,13 @@ const PhotoComments = (props: Props) => {
           </li>
         ))}
       </ul>
-      {login && <PhotoCommentsForm id={props.id} setComments={setComments} />}
+      {login && (
+        <PhotoCommentsForm
+          single={props.single}
+          id={props.id}
+          setComments={setComments}
+        />
+      )}
     </>
   );
 };

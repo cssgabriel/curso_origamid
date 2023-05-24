@@ -14,13 +14,14 @@ const useFetch = () => {
       res = await fetch(url, options);
       json = await res.json();
       if (!res.ok) throw new Error(json.statusText);
+      return { res, json };
     } catch (err) {
       json = null;
       setError(err.message);
+      return { res, json };
     } finally {
       setData(json);
       setLoading(false);
-      return { res, json };
     }
   }, []);
 
