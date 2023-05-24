@@ -39,7 +39,7 @@ const PhotoComments = (props: Props) => {
       <ul ref={commentsSection} className={styles.comments}>
         {comments.map((com) => (
           <li key={com.comment_ID}>
-            <b>{com.comment_author}</b>
+            <b style={{ marginRight: "5px" }}>{com.comment_author}</b>
             <span>{com.comment_content}</span>
           </li>
         ))}
