@@ -9,7 +9,7 @@ body {
   margin: 0;
   color: #333;
   --type-first: Helvetica, Arial, sans-serif;
-  --type-first: "Spectral", Georgia;
+  --type-second: "Spectral", Georgia;
   font-family: var(--type-first);
 }
 
@@ -31,6 +31,9 @@ li {
 img {
   display: block;
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 button,
@@ -53,7 +56,7 @@ a {
 }
 
 .mainContainer {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .animeLeft {
