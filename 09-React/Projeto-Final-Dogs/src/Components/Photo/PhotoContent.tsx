@@ -6,8 +6,10 @@ import { UserContext } from "../../UserContext";
 import PhotoDelete from "./PhotoDelete";
 import Image from "../Helper/Image";
 
-const PhotoContent = ({ data, single }) => {
+const PhotoContent = ({ data, single }: Props) => {
   const user = React.useContext(UserContext);
+  if (!(data?.comments && data?.photo)) return null;
+
   const { photo, comments } = data;
 
   return (
@@ -18,7 +20,7 @@ const PhotoContent = ({ data, single }) => {
       <div className={styles.details}>
         <div>
           <p className={styles.author}>
-            {user.data && user.data.username === photo.author ? (
+            {user?.data && user.data.username === photo.author ? (
               <PhotoDelete id={photo.id} />
             ) : (
               <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>

@@ -2,17 +2,23 @@ import React from "react";
 import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from "./api";
 import { useNavigate } from "react-router-dom";
 
-// declare global {
-//   interface UserContext {
-//      userLogin: (a: number): string;
-//      data: string;
-//      userLogout: string;
-//      error: string;
-//      loading: string;
-//      login: string;
-//     }
+interface Data {
+  email: string;
+  id: number;
+  nome: string;
+  username: string;
+}
 
-// }
+declare global {
+  interface UserContext {
+    userLogin: (a: number) => string;
+    data: null | Data;
+    userLogout: string;
+    error: string;
+    loading: boolen;
+    login: boolean | null;
+  }
+}
 
 export const UserContext = React.createContext<null | unknown>(null);
 
@@ -79,7 +85,7 @@ export const UserStorage = ({ children }) => {
       }
     }
     autoLogin();
-  }, [userLogout]);
+  }, [userLogout, navigate]);
 
   return (
     <UserContext.Provider
