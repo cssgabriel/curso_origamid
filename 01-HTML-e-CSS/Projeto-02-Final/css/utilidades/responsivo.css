@@ -1,0 +1,77 @@
+@media (max-width: 850px) {
+  .tecnologia,
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-bg {
+    box-shadow: none;
+  }
+  .introducao-conteudo,
+  .tecnologia-conteudo {
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+  }
+  .tecnologia-imagem {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  :root {
+    font-size: 50%;
+  }
+  .font-1-xxl {
+    font-size: 4.8rem;
+  }
+  .depoimento,
+  .seguros,
+  .bicicletas-conteudo,
+  .contato,
+  .bicicletas,
+  .lojas,
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .depoimento > div:first-of-type {
+    display: none;
+  }
+  .depoimento-conteudo {
+    padding: 8rem 4rem;
+  }
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+  .bicicletas-conteudo {
+    gap: 1rem;
+  }
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+  .contato-dados {
+    border-radius: 5px 5px 0 0;
+  }
+  .contato-formulario {
+    border-radius: 0 0 5px 5px;
+  }
+  .contato-dados,
+  .contato-formulario {
+    padding: 3rem;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 350px) {
+  .font-1-xl {
+    font-size: 2.8rem;
+  }
+
+  .font-2-xl {
+    font-size: 2.8rem;
+  }
+
+  .font-1-xxl {
+    font-size: 4rem;
+  }
+}

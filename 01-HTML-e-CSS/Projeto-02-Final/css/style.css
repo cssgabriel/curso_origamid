@@ -38,3 +38,5 @@
 /* ORÇAMENTO */
 @import "./orcamento/orcamento.css";
 
+/* RESPONSIVO */
+@import "./utilidades/responsivo.css";
