@@ -40,6 +40,7 @@
   .bicicleta-comprar,
   .bicicleta-informacoes,
   .bicicleta,
+  .orcamento,
   .footer {
     grid-template-columns: 1fr;
   }
@@ -58,18 +59,25 @@
   .bicicletas-bg {
     background: var(--cor-11);
   }
-  .contato-dados {
+  .contato-dados,
+  .orcamento-produto {
     border-radius: 5px 5px 0 0;
   }
-  .contato-formulario {
+  .contato-formulario,
+  .orcamento-dados {
     border-radius: 0 0 5px 5px;
   }
   .contato-dados,
-  .contato-formulario {
+  .contato-formulario,
+  .orcamento-dados,
+  .orcamento-produto {
     padding: 3rem;
   }
   .bicicleta-comprar span {
     place-self: start;
+  }
+  .form > * {
+    grid-column: span 2;
   }
 }
 
