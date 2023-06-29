@@ -1,17 +1,24 @@
 @media (max-width: 850px) {
   .tecnologia,
-  .introducao {
+  .introducao,
+  .seguro {
     grid-template-columns: 1fr;
   }
-  .tecnologia-bg {
+  .tecnologia-bg,
+  .seguro-bg {
     box-shadow: none;
+  }
+  .seguro-conteudo {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   .introducao-conteudo,
   .tecnologia-conteudo {
     padding-bottom: 10rem;
     padding-top: 5rem;
   }
-  .tecnologia-imagem {
+  .tecnologia-imagem,
+  .seguro-imagem {
     display: none;
   }
 }
@@ -29,7 +36,11 @@
   .contato,
   .bicicletas,
   .lojas,
-  .lojas-conteudo {
+  .lojas-conteudo,
+  .bicicleta-comprar,
+  .bicicleta-informacoes,
+  .bicicleta,
+  .footer {
     grid-template-columns: 1fr;
   }
   .depoimento > div:first-of-type {
@@ -57,12 +68,16 @@
   .contato-formulario {
     padding: 3rem;
   }
-  .footer {
-    grid-template-columns: 1fr;
+  .bicicleta-comprar span {
+    place-self: start;
   }
 }
 
 @media (max-width: 350px) {
+  .header-menu {
+    column-gap: 2rem;
+    row-gap: 0;
+  }
   .font-1-xl {
     font-size: 2.8rem;
   }
