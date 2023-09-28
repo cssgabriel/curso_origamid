@@ -1,5 +1,5 @@
 {
-  "name": "hooks",
+  "name": "basico",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,12 +11,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-<<<<<<< HEAD
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.16.0"
-=======
     "react-dom": "^18.2.0"
->>>>>>> 4d72a9a0ec3b2efc0bb99b06996e348be7cce558
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
