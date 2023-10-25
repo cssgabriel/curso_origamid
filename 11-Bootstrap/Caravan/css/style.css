@@ -1,0 +1,20 @@
+header {
+  height: 76px;
+}
+
+#home-quote {
+  background: url("../img/bg-quote.jpg") center center;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  header {
+    height: auto;
+  }
+  .fixed-top {
+    position: relative;
+  }
+  #home-quote .display-4 {
+    font-size: 2.5rem;
+  }
+}
