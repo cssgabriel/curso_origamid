@@ -7,6 +7,13 @@ header {
   background-size: cover;
 }
 
+.lista-plano li + li {
+  padding: 1rem;
+}
+.lista-plano li {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 767px) {
   header {
     height: auto;
